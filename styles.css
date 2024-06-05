@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #000000;
 }
 
 /*ESTILOS PARA EL NAVBAR*/
@@ -11,7 +12,6 @@ body {
     align-items: center;
     background-color: #000000;
     background-image: url('../img/black-paper.png'); /* Ruta a la imagen de textura */
-    background-size: cover; /* Ajustar el tamaño de la imagen al contenedor */
     padding: 10px 20px;
 }
 
@@ -83,7 +83,6 @@ a[href="#top"]:hover {
 }
 
 .container-mayor-izquierda{
-    background-color: red;
     flex: 60%;
     display: flex;
     justify-content: center;
@@ -95,7 +94,6 @@ a[href="#top"]:hover {
 }
 
 .container-menor-derecha{
-    background-color: blue;
     flex: 40%;
     display: flex;
     flex-direction: column;
@@ -105,7 +103,7 @@ a[href="#top"]:hover {
 }
 
 .container-menor-derecha h2 {
-    color: white;
+    color: red;
     font-size: 30px; /* Tamaño de fuente para el título */
     text-align: center; /* Centrar el texto del párrafo */
     margin-bottom: 40px; /* Margen inferior para separarlo del párrafo */
@@ -116,6 +114,33 @@ a[href="#top"]:hover {
     font-size: 16px; /* Tamaño de fuente para el párrafo */
     text-align: center; /* Centrar el texto del párrafo */
     margin: 0;
+}
+
+.conocenos-btn {
+    margin-top: 30px; /* Margen superior para separar el botón del texto */
+}
+
+.banner {
+    background-color: #151414; /* Fondo gris claro */
+    background-image: url('../img/dark-denim-3.png'); /* Ruta a la imagen de textura */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.banner h2 {
+    margin: 0; /* Quita los márgenes predeterminados */
+    font-size: 2em; /* Tamaño de fuente para el encabezado */
+    color: red; /* Color del texto */
+}
+
+footer{
+    background-color: #000000;
+    background-image: url('../img/black-paper.png'); /* Ruta a la imagen de textura */
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 20px;
+    width: 100%; /* Ancho completo */
 }
 
 /* Media query para pantallas más pequeñas */
