@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    background-image: url('../img/black-paper.png'); /* Ruta a la imagen de textura */
+    background-image: url('../img/black-paper.png');
     padding: 10px 20px;
 }
 
@@ -74,7 +74,7 @@ a[href="#top"] {
 }
 
 a[href="#top"]:hover {
-    color: red; /* Optional: Change color on hover */
+    color: red;
 }
 
 .flex-container{
@@ -104,46 +104,51 @@ a[href="#top"]:hover {
 
 .container-menor-derecha h2 {
     color: red;
-    font-size: 30px; /* Tamaño de fuente para el título */
-    text-align: center; /* Centrar el texto del párrafo */
-    margin-bottom: 40px; /* Margen inferior para separarlo del párrafo */
+    font-size: 30px; 
+    text-align: center; 
+    margin-bottom: 40px;
 }
 
 .container-menor-derecha p {
     color: white;
-    font-size: 16px; /* Tamaño de fuente para el párrafo */
-    text-align: center; /* Centrar el texto del párrafo */
+    font-size: 16px;
+    text-align: center;
     margin: 0;
 }
 
 .conocenos-btn {
-    margin-top: 30px; /* Margen superior para separar el botón del texto */
+    margin-top: 30px;
 }
 
 .banner {
-    background-color: #151414; /* Fondo gris claro */
-    background-image: url('../img/dark-denim-3.png'); /* Ruta a la imagen de textura */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    padding: 20px 0; /* Espaciado superior e inferior */
-    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #151414;
+    background-image: url('../img/dark-denim-3.png');
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .banner h2 {
-    margin: 0; /* Quita los márgenes predeterminados */
-    font-size: 2em; /* Tamaño de fuente para el encabezado */
-    color: red; /* Color del texto */
+    margin: 0; 
+    font-size: 2em;
+    color: red;
+}
+
+.custom-card {
+    width: 100%; /* Asegura que ocupe el ancho completo de la columna */
+    height: 400px; /* Ajusta la altura según tus necesidades */
 }
 
 footer{
     background-color: #000000;
-    background-image: url('../img/black-paper.png'); /* Ruta a la imagen de textura */
-    color: rgb(255, 255, 255); /* Color del texto */
-    text-align: center; /* Alinear el texto al centro */
+    background-image: url('../img/black-paper.png');
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    height: 70px;
     padding: 20px;
-    width: 100%; /* Ancho completo */
+    width: 100%; 
 }
 
-/* Media query para pantallas más pequeñas */
 @media (max-width: 700px) {
     .flex-container {
         flex-direction: column;
