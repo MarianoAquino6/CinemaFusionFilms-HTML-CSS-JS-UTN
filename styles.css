@@ -92,6 +92,11 @@ a[href="#top"]:hover {
     margin-right: 15px;
 }
 
+.logo:hover
+{
+    content: url('../img/logo-3-red.png');
+}
+
 .titulo {
     text-decoration: none;
     color: white;
