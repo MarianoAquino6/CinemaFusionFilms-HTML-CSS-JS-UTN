@@ -39,6 +39,10 @@ h4 {
     margin-bottom: 2rem;
 }
 
+label{
+    color: white;
+}
+
 .img-container {
     margin: 0 auto;
     width: 60rem;
@@ -56,3 +60,20 @@ h4 {
     padding: 0.8rem;
 }
 
+.form-group button{
+    margin-top: 0.5rem;
+}
+
+#comment{
+    max-width: 50rem;
+}
+
+.caja-comentarios label{
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.comentarios{
+    margin: 1rem; 
+    text-align: left;
+}
