@@ -1,0 +1,56 @@
+/* ESTILOS PARA EL HOMEPAGE */
+
+.container-principal-home{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-mayor-izquierda{
+    flex: 60%;
+    display: flex;
+}
+
+.container-mayor-izquierda img{
+    width: 100%;
+}
+
+.container-menor-derecha{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center; 
+}
+
+.container-menor-derecha h2 {
+    font-size: 1.8rem; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.conocenos-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'ubuntu';
+}
+
+.cuerpo-card
+{
+    background-image: url('../img/card-bg.jpg');
+    color:white;
+    font-family: 'ubuntu';
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    .container-principal-home {
+        flex-direction: column-reverse;
+    }
+
+    .container-mayor-izquierda, .container-menor-derecha {
+        flex: 100%;
+    }
+}
