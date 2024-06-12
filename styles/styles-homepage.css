@@ -42,3 +42,15 @@
     color:white;
     font-family: 'ubuntu';
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    .container-principal-home {
+        flex-direction: column-reverse;
+    }
+
+    .container-mayor-izquierda, .container-menor-derecha {
+        flex: 100%;
+    }
+}

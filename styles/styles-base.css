@@ -146,14 +146,3 @@ footer{
 .copyright p{
     font-size: 1.1rem;
 }
-
-/* MEDIA QUERIES */
-
-@media (max-width: 700px) {
-    .flex-container {
-        flex-direction: column;
-    }
-    .container-mayor-izquierda, .container-menor-derecha {
-        flex: 100%;
-    }
-}
