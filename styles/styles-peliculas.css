@@ -1,0 +1,191 @@
+/* ESTILOS PARA PAGINAS PELICULAS*/
+
+/* 1. CONTAINER PRINCIPAL */
+
+.flex-container-peliculas {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+
+.poster
+{
+    display: flex;
+    flex: 35%;
+    border-right: 2px solid white;
+}
+
+.poster img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.info-compra
+{
+    display: flex;
+    flex-direction: column;
+    flex: 65%;
+    justify-content: space-between;
+}
+
+.trailer
+{
+    display: flex;
+    flex-direction: column;
+    flex: 80%;
+}
+
+.trailer iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+.precio-puntuacion
+{
+    background-image: url('../img/card-bg.jpg');
+    display: flex;
+    flex: 10%;
+    flex-direction: row;
+    border-top: 2px solid white;
+}
+
+.precio
+{
+    display: flex;
+    flex: 35%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 2px solid white;
+}
+
+.precio p{
+    font-family: 'ubuntu';
+    font-size: 1.2rem;
+}
+
+.puntuacion
+{
+    display: flex;
+    flex:65%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.puntuacion p
+{
+    margin-right: 10px;
+    font-family: 'ubuntu';
+    font-size: 1.2rem;
+}
+
+.estrellas .fa-star {
+    font-size: 20px;
+    color: rgb(230, 53, 30);
+    margin-right: 5px;
+}
+
+.estrellas .fa-star.bn {
+    color: gray;
+}
+
+.boton-carrito
+{
+    display: flex;
+    flex:10%;
+    font-family: 'ubuntu';
+}
+
+/* 2. CONTAINER SECUNDARIO CON INFORMACION PELICULAS */
+
+.sinopsis-reparto {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.reparto
+{
+    display: flex;
+    flex: 45%;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+table {
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    border: 2px solid #800000;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #800000;
+}
+
+th {
+    background-color: #400000;
+    color: #ff0000;
+    text-transform: uppercase;
+    font-family: 'ubuntu';
+}
+
+tr:nth-child(even) {
+    background-color: #333; /* Filas pares con fondo gris oscuro */
+}
+
+tr:hover {
+    background-color: #550000; /* Fila en hover con fondo rojo oscuro */
+}
+
+.sinopsis-puntuacionUsuario {
+    display: flex;
+    flex: 55%;
+    flex-direction: column; /* Asegura que los hijos se coloquen en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: space-between; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.sinopsis p {
+    color: white;
+    padding: 30px;
+    text-align: center; /* Centra el texto */
+}
+
+.puntuacionUsuario .estrellas{
+    margin-top: 30px;
+}
+
+/* 3. GALERIA */
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 90px auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.carousel-inner img {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+} 
