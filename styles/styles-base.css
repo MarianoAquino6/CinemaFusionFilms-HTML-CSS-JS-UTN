@@ -10,33 +10,36 @@ body {
     font-family: 'horror-font-h2';
     src: url('../fonts/horror-font-h2.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'horror-font-light';
     src: url('../fonts/horror-font-light.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'candara';
     src: url('../fonts/Candara.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'ubuntu';
     src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
 }
 
-h2{
+h2 {
     color: red;
     font-family: 'horror-font-h2';
     margin: 0;
 }
 
-h3{
+h3 {
     color: red;
-    font-size:3rem;
+    font-size: 3rem;
     font-family: 'horror-font-light';
     margin: 0;
 }
 
-p{
+p {
     color: white;
     font-size: 1rem;
     font-family: 'candara';
@@ -92,8 +95,7 @@ a[href="#top"]:hover {
     margin-right: 15px;
 }
 
-.logo:hover
-{
+.logo:hover {
     content: url('../img/logo-3-red.png');
 }
 
@@ -154,7 +156,7 @@ a[href="#top"]:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 9999;
     justify-content: center;
     align-items: center;
@@ -189,18 +191,18 @@ a[href="#top"]:hover {
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #000000;
     background-image: url('../img/black-paper.png');
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     text-align: center;
     height: 70px;
     padding: 20px;
     width: 100%;
-    
+
 }
 
-.copyright p{
+.copyright p {
     font-size: 1.1rem;
 }
 
