@@ -130,6 +130,63 @@ a[href="#top"]:hover {
     color: red;
 }
 
+/* PARTE RESPONSIVE MENU */
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-icon:hover {
+    color: red;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fullscreen-menu-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'ubuntu';
+    transition: color 0.3s ease;
+}
+
+.fullscreen-menu-links a:hover {
+    color: red;
+}
+
+.cerrar-menu {
+    display: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
 /* FOOTER */
 
 footer{
@@ -145,4 +202,24 @@ footer{
 
 .copyright p{
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-derecha {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked~.fullscreen-menu {
+        display: flex;
+    }
+
+    /* Mostrar el botón de cerrar menú cuando el checkbox está checked */
+    #menu-toggle:checked~.fullscreen-menu .cerrar-menu {
+        display: block;
+    }
 }
