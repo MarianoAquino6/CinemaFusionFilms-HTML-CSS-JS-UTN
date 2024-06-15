@@ -27,11 +27,13 @@
 .custom-flex-item {
     flex: 1;
     padding: 30px;
+    padding-left: 50px;  
+    padding-right: 50px;
     box-sizing: border-box;
 }
 
 .iframe-container {
     width: 100%;
-    max-width: 600px; /* Limit the max width */
-    margin: 0 auto; /* Center the iframe */
+    max-width: 600px;
+    margin: 0 auto; 
 }
