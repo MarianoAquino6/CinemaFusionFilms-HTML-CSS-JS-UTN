@@ -19,4 +19,14 @@
   .text-center {
     text-align: center;
   }
+  .contenedor {
+    background-image: url('../img/card-bg.jpg');
+  }
+
+  h4{
+    color: red;
+    font-size: 3rem;
+    font-family: 'horror-font-light';
+    margin: 0;
+  }
   
