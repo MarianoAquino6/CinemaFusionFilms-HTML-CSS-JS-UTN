@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinemaFusion Films</title>
+    <link rel="icon" type="image/png" href="img/icon-fav.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles-base.css" />
+    <link rel="stylesheet" href="../styles/styles-novedades.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-izquierda">
+          <a href="../index.html"
+            ><img src="../img/logo-3.png" alt="Logo" class="logo"
+          /></a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="fullscreen-menu">
+            <ul class="fullscreen-menu-links">
+              <li><a href="../acerca-de.html">ACERCA DE</a></li>
+              <li><a href="../nuestras-peliculas.html">NUESTRAS PELICULAS</a></li>
+              <li><a href="../novedades.html">NOVEDADES</a></li>
+              <li><a href="../contacto.html">CONTACTO</a></li>
+              <li><a href="../ingresar.html">INGRESAR</a></li>
+              <li>
+                <a href="../carrito.html"><i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+  
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="btn btn-danger cerrar-menu"
+              >CERRAR MENU</label
+            >
+          </div>
+  
+          <ul class="nav-derecha">
+            <li><a href="../acerca-de.html">ACERCA DE</a></li>
+            <li><a href="../nuestras-peliculas.html">NUESTRAS PELICULAS</a></li>
+            <li><a href="../novedades.html">NOVEDADES</a></li>
+            <li><a href="../contacto.html">CONTACTO</a></li>
+            <li><a href="../ingresar.html">INGRESAR</a></li>
+            <li>
+              <a href="../carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main class="container mt-4">
+      <a href="#top">
+        <i class="fas fa-angle-double-up"></i>
+      </a>
+      <section>
+        <div class="banner text-center p-3">
+          <h2>ARTICULOS</h2>
+        </div>
+
+        <div class="article-content">
+          <h4 class="text-center">
+            ‘Maligno’, la película más desconocida del creador de ‘Saw’ y
+            ‘Expediente Warren’
+          </h4>
+          <div class="img-container text-center">
+            <img
+              src="../img/novedades/MALIGNO-caratula.jpg"
+              class="img-fluid"
+              alt=
+            />
+            <p class="text-center mt-2">Maligno - James Wan (2021)</p>
+          </div>
+          <div class="text-container mt-4">
+            <p>
+              Hablar de James Wan es hablar de uno de los maestros del terror
+              del siglo XXI. Porque más allá de haber creado una saga tan
+              popular y exitosa como ‘Saw’, también es el autor de dos de las
+              películas de terror mejor valoradas de los últimos 15 años:
+              ‘Expediente Warren’ (’El conjuro’) e ‘Insidious’.
+            </p>
+            <p>
+              Como suele pasar con los cineastas que cuentan con decenas de
+              obras a sus espaldas, algunas pasan desapercibidas, ya sea por no
+              destacar especialmente o por el mero hecho de que otras alcanzan
+              el éxito y acaparan todos los focos. Es el caso de ‘Maligno’, una
+              película que Wan estrenó en 2021 y que actualmente puedes ver en
+              varias plataformas de streaming.
+            </p>
+            <p>
+              La premisa de ‘Maligno’ es realmente atractiva, pues sigue a una
+              mujer llamada Madison que no consigue conciliar el sueño durante
+              la noche. El motivo es que sufre pesadillas en las que tiene
+              visiones realmente perturbadoras, las cuales la llevan a
+              experimentar parálisis de sueño. ¿Son pesadillas? ¿son sueños
+              premonitorios?
+            </p>
+          </div>
+
+          <div class="form-group mt-4">
+            <label for="comment">Deja un comentario:</label>
+            <textarea id="comment" class="form-control" rows="3"></textarea>
+            <button class="btn btn-outline-danger mt-2">Enviar</button>
+          </div>
+
+          <div class="caja-comentarios mt-4">
+            <label for="">Comentarios</label>
+            <div class="comentarios"></div>
+            <p>No hay comentarios. ¡Sé el primero!</p>
+          </div>
+
+          <div class="otros-articulos mt-5">
+            <h3 class="text-center">Otros Artículos:</h3>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="strangers.html"><div class="card">
+                    <img
+                      src="../img/novedades/strangerschapter1.jpg"
+                      class="card-img-top"
+                      alt="Imagen"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        "Strangers: Capítulo 1" ya es la película de terror más
+                        taquillera del año en USA.
+                      </h5>
+                    </div>
+                  </div></a>
+                
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="evil-lurks.html"><div class="card">
+                    <img
+                      src="../img/novedades/whenevillurks.webp"
+                      class="card-img-top"
+                      alt="Imagen"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          Cuando acecha la maldad: la joya argentina del cine de terror llega a Netflix en junio.
+                      </h5>
+                    </div>
+                  </div></a>
+                
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="alien-romulus.html"> <div class="card">
+                    <img
+                      src="../img/novedades/alien-romulus-poster.png"
+                      class="card-img-top"
+                      alt="Imagen"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        El nuevo tráiler de ‘Alien Romulus’ provoca taquicardias y
+                        promete devolver la gloria a la saga.
+                      </h5>
+                    </div>
+                  </div></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2024 CinemaFusion Films</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
