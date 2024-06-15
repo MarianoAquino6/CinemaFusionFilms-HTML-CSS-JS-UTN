@@ -1,0 +1,51 @@
+/* ESTILOS PARA EL REGISTRO*/
+
+.main-registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registro h3{
+    margin-bottom: 10px;
+}
+
+.registro label{
+    font-family: 'ubuntu';
+    color: white;;
+}
+
+.registro input, button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+@media screen and (max-width: 1050px) {
+    .main-registro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registro{
+        padding: 30px;
+        align-items: center;
+    }
+
+    .imagen-registro {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .imagen-registro img {
+        width: 100%;
+        height: auto;
+    }
+}
