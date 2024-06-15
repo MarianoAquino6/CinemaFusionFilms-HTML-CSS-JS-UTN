@@ -29,4 +29,15 @@
     font-family: 'horror-font-light';
     margin: 0;
   }
-  
+  h5{
+    color: white;
+  }
+
+  hr{
+    color: black;
+    border: 1px solid;
+    margin: 5px;
+  }
+  .cards-button .btn{
+    margin-right: 10px;
+  }

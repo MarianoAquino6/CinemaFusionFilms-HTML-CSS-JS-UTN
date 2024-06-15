@@ -61,41 +61,47 @@
       <div class="col-md-7">
         <div class="card mb-4 contenedor">
           <h4 class="text-center"> Productos</h4>
-          <div class="row g-0">
-            <div class="col-md-4 mt-1">
-              <img src="img/grid-peliculas/terrifier.jpg" class="img-fluid rounded" alt="terrifier">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Producto 1</h5>
-                <p class="card-text">Descripción breve del producto 1.</p>
-                <p class="card-text"><small class="text-muted">Precio: $20.00</small></p>
-                <div class="input-group mb-3">
-                  <button class="btn btn-outline-secondary" type="button">-</button>
-                  <input type="text" class="form-control text-center" value="1">
-                  <button class="btn btn-outline-secondary" type="button">+</button>
+          <hr>
+          <div class="row">
+            <img src="img/grid-peliculas/terrifier.jpg" class="img-fluid col-md-4 mt-1" alt="Terrifier">
+              <div class="card-body col-md-8">
+                <h5>Nombre: Terrifier</h5>
+                <h5>Precio: $20.00</h5>
+                <div class="cards-button">
+                  <button class="btn btn-danger">Eliminar</button>
+                  <button class="btn btn-primary mt-2">Agregar a Favoritos</button>
                 </div>
-                <button class="btn btn-danger">Eliminar</button>
               </div>
-            </div>
+              <hr>
+            <img src="img/grid-peliculas/inferno.jpg" class="img-fluid col-md-4 mt-1" alt="Inferno">
+              <div class="card-body col-md-8">
+                <h5>Nombre: Inferno</h5>
+                <h5>Precio: $24.00</h5>
+                <div class="cards-button">
+                  <button class="btn btn-danger">Eliminar</button>
+                  <button class="btn btn-primary mt-2">Agregar a Favoritos</button>
+                </div>
+              </div>
+              <hr>  
           </div>
         </div>
-        
-        <!-- Repetir tarjeta de producto para cada artículo en el carrito -->
       </div>
+
       <div class="col-md-5">
         <div class="card contenedor">
           <h4 class="text-center"> Resumen del Pedido</h4>
+          <hr>
           <div class="card-body">
-            <h5 class="card-title">Resumen del Pedido</h5>
-            <p class="card-text">Subtotal: $20.00</p>
-            <p class="card-text">Envío: $5.00</p>
-            <p class="card-text"><strong>Total: $25.00</strong></p>
-            <button class="btn btn-primary w-100">Proceder al Pago</button>
+            <h5>Subtotal: $44.00</h5>
+            <h5>Impuesto Pais: 20%</h5>
+            <h5>Total: $52.80</h5>
+            <a href="pago.html" class="btn btn-primary w-100">Realizar Pago</a>
           </div>
         </div>
       </div>
+
     </div>
+    
     </section>
   </main>
 
