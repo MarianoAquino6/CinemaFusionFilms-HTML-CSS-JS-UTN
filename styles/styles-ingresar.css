@@ -1,0 +1,71 @@
+/* ESTILOS PARA INGRESAR*/
+
+.main-ingresar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.login-registro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.login h3{
+    margin-bottom: 10px;
+}
+
+.login label{
+    font-family: 'ubuntu';
+    color: white;;
+}
+
+.login input, button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.login a{
+    color: red;
+}
+
+.registro h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .main-ingresar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-registro {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login, .registro {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-ingresar {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .imagen-ingresar img {
+        width: 100%;
+        height: auto;
+    }
+}
