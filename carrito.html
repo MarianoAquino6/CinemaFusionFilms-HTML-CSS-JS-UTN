@@ -55,8 +55,44 @@
       <i class="fas fa-angle-double-up"></i>
     </a>
 
-    <section>
-        <p>hola hola</p>
+    <section class="container mt-5">
+      <h2 class="text-center mb-4">Carrito de Compras</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <!-- <img src="img/producto1.jpg" class="img-fluid rounded-start" alt="Producto 1"> -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Producto 1</h5>
+                <p class="card-text">Descripción breve del producto 1.</p>
+                <p class="card-text"><small class="text-muted">Precio: $20.00</small></p>
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button">-</button>
+                  <input type="text" class="form-control text-center" value="1">
+                  <button class="btn btn-outline-secondary" type="button">+</button>
+                </div>
+                <button class="btn btn-danger">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repetir tarjeta de producto para cada artículo en el carrito -->
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resumen del Pedido</h5>
+            <p class="card-text">Subtotal: $20.00</p>
+            <p class="card-text">Envío: $5.00</p>
+            <p class="card-text"><strong>Total: $25.00</strong></p>
+            <button class="btn btn-primary w-100">Proceder al Pago</button>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
   </main>
 
