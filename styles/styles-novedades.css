@@ -10,14 +10,14 @@
 
 
 .recent-article .article-content {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
-.other-news .card {
-    margin-bottom: 20px;
+.otros-articulos .card {
+    margin: 1rem;
 }
 
-.other-news .card img {
+.otros-articulos .card img {
     height: 200px;
     object-fit: cover;
 }
@@ -77,3 +77,37 @@ label{
     margin: 1rem; 
     text-align: left;
 }
+
+.card-body {
+    background-color: #151414;
+    background-image: url('../img/dark-denim-3.png');
+}
+
+.card-title{
+    color:firebrick;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .banner, .recent-article {
+      padding: 1rem;
+    }
+  
+    h4 {
+      font-size: 1.5rem;
+    }
+  
+    .img-container {
+      max-width: 100%;
+    }
+  
+    .text-container p {
+        padding: 0.5rem;
+    }
+  }
+  

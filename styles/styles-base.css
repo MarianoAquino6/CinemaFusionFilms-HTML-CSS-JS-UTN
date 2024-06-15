@@ -10,33 +10,36 @@ body {
     font-family: 'horror-font-h2';
     src: url('../fonts/horror-font-h2.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'horror-font-light';
     src: url('../fonts/horror-font-light.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'candara';
     src: url('../fonts/Candara.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'ubuntu';
     src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
 }
 
-h2{
+h2 {
     color: red;
     font-family: 'horror-font-h2';
     margin: 0;
 }
 
-h3{
+h3 {
     color: red;
-    font-size:3rem;
+    font-size: 3rem;
     font-family: 'horror-font-light';
     margin: 0;
 }
 
-p{
+p {
     color: white;
     font-size: 1rem;
     font-family: 'candara';
@@ -92,8 +95,7 @@ a[href="#top"]:hover {
     margin-right: 15px;
 }
 
-.logo:hover
-{
+.logo:hover {
     content: url('../img/logo-3-red.png');
 }
 
@@ -130,19 +132,96 @@ a[href="#top"]:hover {
     color: red;
 }
 
+/* PARTE RESPONSIVE MENU */
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-icon:hover {
+    color: red;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fullscreen-menu-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'ubuntu';
+    transition: color 0.3s ease;
+}
+
+.fullscreen-menu-links a:hover {
+    color: red;
+}
+
+.cerrar-menu {
+    display: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
 /* FOOTER */
 
-footer{
+footer {
     background-color: #000000;
     background-image: url('../img/black-paper.png');
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     text-align: center;
     height: 70px;
     padding: 20px;
     width: 100%;
-    
+
 }
 
-.copyright p{
+.copyright p {
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-derecha {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked~.fullscreen-menu {
+        display: flex;
+    }
+
+    /* Mostrar el botón de cerrar menú cuando el checkbox está checked */
+    #menu-toggle:checked~.fullscreen-menu .cerrar-menu {
+        display: block;
+    }
 }
