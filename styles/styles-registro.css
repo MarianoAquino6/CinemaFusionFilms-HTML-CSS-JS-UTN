@@ -1,27 +1,29 @@
 /* ESTILOS PARA EL REGISTRO*/
 
-.main-registro{
+.main-registro {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.registro{
+.registro {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.registro h3{
+.registro h3 {
     margin-bottom: 10px;
 }
 
-.registro label{
+.registro label {
     font-family: 'ubuntu';
-    color: white;;
+    color: white;
+    ;
 }
 
-.registro input, button{
+.registro input,
+button {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 70%;
@@ -34,7 +36,7 @@
         align-items: center;
     }
 
-    .registro{
+    .registro {
         padding: 30px;
         align-items: center;
     }
