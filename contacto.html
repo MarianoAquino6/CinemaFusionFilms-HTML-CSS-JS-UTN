@@ -14,10 +14,46 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
 
     <iframe src="partials/navbar.html" class="navbar-partial"></iframe>
 
+  </header> -->
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-izquierda">
+        <a href="#"><img src="../img/logo-3.png" alt="Logo" class="logo"></a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <div class="fullscreen-menu">
+        <ul class="fullscreen-menu-links">
+          <li><a href="acerca-de.html">ACERCA DE</a></li>
+          <li><a href="nuestras-peliculas.html">NUESTRAS PELICULAS</a></li>
+          <li><a href="novedades.html">NOVEDADES</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="ingresar.html">INGRESAR</a></li>
+          <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="btn btn-danger cerrar-menu">CERRAR MENU</label>
+      </div>
+
+      <ul class="nav-derecha">
+        <li><a href="acerca-de.html">ACERCA DE</a></li>
+        <li><a href="nuestras-peliculas.html">NUESTRAS PELICULAS</a></li>
+        <li><a href="novedades.html">NOVEDADES</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="ingresar.html">INGRESAR</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -25,58 +61,68 @@
       <i class="fas fa-angle-double-up"></i>
     </a>
 
-    <section class="margen-pagina">
-      <div class="banner text-center p-3">
-        <h2>Contactanos</h2>
+    <section>
+      <div class="banner">
+        <h2>CONTACTANOS</h2>
       </div>
-      <br><br>
+    </section>
+
+    <section class="margen-pagina">
       <div class="container-2-bloques">
         <div class="bloque">
           <h3>Capital Federal</h3>
           <br>
           <p>Horarios de atencion : Lunes a Viernes de 10 a 18Hs</p>
           <div class="iframe-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.822235586908!2d-58.380524223392!3d-34.60865635776064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad18308bb79%3A0x6ac2dbd8335ca774!2sAv.%20de%20Mayo%20811%2C%20C1084AAD%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714323104905!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.822235586908!2d-58.380524223392!3d-34.60865635776064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad18308bb79%3A0x6ac2dbd8335ca774!2sAv.%20de%20Mayo%20811%2C%20C1084AAD%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714323104905!5m2!1ses!2sar"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           <br>
         </div>
         <div class="bloque">
           <div class="form-contacto">
-            <div class="formulario">      
-              <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>      
+            <div class="formulario">
+              <h3>Escribenos y en breve nos pondremos en contacto contigo</h3>
               <div class="container mt-5">
                 <form action="#" method="post">
                   <div class="form-group">
-                      <label for="nombre"><span class="obligatorio">Nombre*</span></label>
-                      <input type="text" class="form-control" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                    <label for="nombre"><span class="blanco">Nombre*</span></label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required
+                      placeholder="Escribe tu nombre">
                   </div>
                   <div class="form-group">
-                      <label for="email"><span class="obligatorio">Email*</span></label>
-                      <input type="email" class="form-control" name="email" id="email" required placeholder="Escribe tu Email">
+                    <label for="email"><span class="blanco">Email*</span></label>
+                    <input type="email" class="form-control" name="email" id="email" required
+                      placeholder="Escribe tu Email">
                   </div>
                   <div class="form-group">
-                      <label for="telefono">Teléfono</label>
-                      <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    <label for="telefono"><span class="blanco">Teléfono</span></label>
+                    <input type="tel" class="form-control" name="telefono" id="telefono"
+                      placeholder="Escribe tu teléfono">
                   </div>
                   <div class="form-group">
-                      <label for="website">Sitio web</label>
-                      <input type="url" class="form-control" name="url" id="website" placeholder="Escribe la URL de tu web">
+                    <label for="website"><span class="blanco">Sitio web</span></label>
+                    <input type="url" class="form-control" name="url" id="website"
+                      placeholder="Escribe la URL de tu web">
                   </div>
                   <div class="form-group">
-                      <label for="asunto"><span class="obligatorio">Asunto *</span></label>
-                      <input type="text" class="form-control" name="asunto" id="asunto" required placeholder="Escribe un asunto">
+                    <label for="asunto"><span class="blanco">Asunto *</span></label>
+                    <input type="text" class="form-control" name="asunto" id="asunto" required
+                      placeholder="Escribe un asunto">
                   </div>
                   <div class="form-group">
-                      <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
-                      <textarea name="mensaje" class="form-control" id="mensaje" required placeholder="Deja aquí tu comentario..." rows="4"></textarea>
+                    <label for="mensaje"><span class="blanco">Mensaje*</span></label>
+                    <textarea name="mensaje" class="form-control" id="mensaje" required
+                      placeholder="Deja aquí tu comentario..." rows="4"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-success">Enviar</button>
-                  <p class="mt-3">
-                      <span class="obligatorio">*</span> los campos son obligatorios.
+                  <button type="submit" class="btn btn-danger btn-rojo">Enviar</button>
+                  <p class="mt-2">
+                    <span class="obligatorio">*</span> los campos son obligatorios.
                   </p>
                 </form>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +130,8 @@
       <div class="text-center">
         <h3>O sino comunicate por whatsapp</h3>
         <br>
-        <a href="https://wa.me/+5491134298740/?text=tu%20texto%20personalizado" target="_blank"><img src="/img\whatsapp.png" width="5%"></a>
+        <a href="https://wa.me/+5491134298740/?text=tu%20texto%20personalizado" target="_blank"><img
+            src="/img\whatsapp.png" width="5%"></a>
         <br><br>
         <br><br>
       </div>

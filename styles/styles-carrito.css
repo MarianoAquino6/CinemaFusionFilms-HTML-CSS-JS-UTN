@@ -1,43 +1,48 @@
 .card {
-    margin-bottom: 20px;
-  }
-  
-  .card img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .input-group {
-    max-width: 150px;
-    margin-top: 10px;
-  }
-  
-  .btn-danger {
-    margin-top: 10px;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  .contenedor {
-    background-image: url('../img/card-bg.jpg');
-  }
+  margin-bottom: 20px;
+}
 
-  h4{
-    color: red;
-    font-size: 3rem;
-    font-family: 'horror-font-light';
-    margin: 0;
-  }
-  h5{
-    color: white;
-  }
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
 
-  hr{
-    color: black;
-    border: 1px solid;
-    margin: 5px;
-  }
-  .cards-button .btn{
-    margin-right: 10px;
-  }
+.input-group {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'ubuntu';
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contenedor {
+  background-image: url('../img/card-bg.jpg');
+}
+
+h4 {
+  color: red;
+  font-size: 3rem;
+  font-family: 'horror-font-light';
+  margin: 0;
+}
+
+h5 {
+  color: white;
+}
+
+hr {
+  color: black;
+  border: 1px solid;
+  margin: 5px;
+}
+
+.cards-button .btn {
+  margin-right: 10px;
+}

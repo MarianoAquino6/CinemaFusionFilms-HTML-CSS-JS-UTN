@@ -68,6 +68,12 @@ a[href="#top"]:hover {
     color: red;
 }
 
+.btn-rojo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'ubuntu';
+}
+
 /*ESTILOS PARA EL NAVBAR*/
 
 .navbar {
