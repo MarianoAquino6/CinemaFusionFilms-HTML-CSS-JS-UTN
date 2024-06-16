@@ -30,12 +30,6 @@
     margin-bottom: 30px;
 }
 
-.conocenos-btn {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'ubuntu';
-}
-
 .cuerpo-card,
 .cuerpo-card a {
     background-image: url('../img/card-bg.jpg');
