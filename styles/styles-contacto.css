@@ -3,11 +3,6 @@
     margin-right: 20px;
 }
 
-.banner {
-    text-align: center;
-    padding: 1rem;
-}
-
 .form-contacto {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -23,7 +18,7 @@
 .bloque {
     flex: 1;
     padding: 30px;
-    padding-left: 50px;  
+    padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
 }
@@ -45,3 +40,6 @@
 
 }
 
+.blanco {
+    color: white;
+}

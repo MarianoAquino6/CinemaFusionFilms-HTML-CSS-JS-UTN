@@ -1,4 +1,3 @@
-
 .recent-article {
     display: flex;
     justify-content: center;
@@ -39,7 +38,7 @@ h4 {
     margin-bottom: 2rem;
 }
 
-label{
+label {
     color: white;
 }
 
@@ -52,29 +51,29 @@ label{
     object-fit: cover;
 }
 
-.text-container{
+.text-container {
     margin: 2rem 0rem 1rem;
 }
 
-.text-container p{
+.text-container p {
     padding: 0.8rem;
 }
 
-.form-group button{
+.form-group button {
     margin-top: 0.5rem;
 }
 
-#comment{
+#comment {
     max-width: 50rem;
 }
 
-.caja-comentarios label{
+.caja-comentarios label {
     margin: 1.5rem 0 1rem 0;
     font-size: 1.5rem;
 }
 
-.comentarios{
-    margin: 1rem; 
+.comentarios {
+    margin: 1rem;
     text-align: left;
 }
 
@@ -83,8 +82,8 @@ label{
     background-image: url('../img/dark-denim-3.png');
 }
 
-.card-title{
-    color:firebrick;
+.card-title {
+    color: firebrick;
 }
 
 a {
@@ -94,20 +93,21 @@ a {
 /* Responsiveness */
 
 @media (max-width: 768px) {
-    .banner, .recent-article {
-      padding: 1rem;
+
+    .banner,
+    .recent-article {
+        padding: 1rem;
     }
-  
+
     h4 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .img-container {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .text-container p {
         padding: 0.5rem;
     }
-  }
-  
+}
