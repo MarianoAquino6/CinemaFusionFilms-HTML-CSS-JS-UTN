@@ -18,7 +18,7 @@
 }
 
 .text-container h2 {
-    margin-bottom: 1rem; 
+    margin-bottom: 2rem; 
 }
 
 .text-container ul li {
@@ -30,7 +30,7 @@
 }
 
 .text-container ul li:hover {
-    background-color: #555; 
+    background-color: red; 
 }
 
 .text-container ul li a {
@@ -67,7 +67,6 @@
 
 /* Responsiveness */
 @media (max-width: 768px) {
-    .banner,
     .recent-article {
         padding: 1rem;
         margin: 1rem;
@@ -81,7 +80,15 @@
         max-width: 100%;
     }
 
+    .recent-article .text-container {
+        color: aqua;
+    }
+
     .text-container p {
         padding: 0.5rem;
+    }
+
+    .text-container ul li{
+        display:block ;
     }
 }
