@@ -45,6 +45,7 @@ label {
 .img-container {
     margin: 0 auto;
     width: 60rem;
+    max-width: 100%;
 }
 
 .img-container img {
@@ -90,13 +91,10 @@ a {
     text-decoration: none;
 }
 
-/* Responsiveness */
 
-@media (max-width: 768px) {
-
-    .banner,
-    .recent-article {
-        padding: 1rem;
+@media (max-width:800px) {
+    .banner, .recent-article {
+      padding: 1rem;
     }
 
     h4 {
