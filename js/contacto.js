@@ -11,7 +11,7 @@ function sendEmail() {
 
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!emailPattern.test(email)) {
-      alert('Por favor, ingrese un email válido.');
+        showToast('Por favor, ingrese un email válido.', 'error');
       return;
     }
 
@@ -24,13 +24,23 @@ function sendEmail() {
       mensaje: mensaje
     };
 
-    alert("llegamos")
-
     emailjs.send('service_42dc0ua', 'template_wobjqco', templateParams)
       .then(function(response) {
-        alert('Formulario enviado con éxito.');
+        showToast('Formulario enviado con éxito.', 'success');
         form.reset();
       }, function(error) {
-        alert('Hubo un problema al enviar el formulario: ' + JSON.stringify(error));
+        showToast('Hubo un problema al enviar el formulario: ' + JSON.stringify(error), 'error');
       });
   }
+
+function showToast(message, type) {
+Toastify({
+    text: message,
+    duration: 3000,
+    close: true,
+    gravity: "top",
+    position: "right",
+    backgroundColor: type === 'success' ? "green" : "red",
+    stopOnFocus: true,
+}).showToast();
+}
