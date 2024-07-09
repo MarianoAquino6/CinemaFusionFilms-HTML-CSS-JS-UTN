@@ -11,6 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles-base.css">
   <link rel="stylesheet" href="styles/styles-contacto.css">
+
 </head>
 
 <body>
@@ -83,7 +84,7 @@
             <div class="formulario">
               <h3>Escribenos y en breve nos pondremos en contacto contigo</h3>
               <div class="container mt-5">
-                <form action="#" method="post">
+                <form id="contactForm" action="javascript:sendEmail()" method="post">
                   <div class="form-group">
                     <label for="nombre"><span class="blanco">Nombre*</span></label>
                     <input type="text" class="form-control" name="nombre" id="nombre" required
@@ -129,6 +130,10 @@
         <a href="https://wa.me/+5491134298740/?text=tu%20texto%20personalizado" target="_blank"><img
             src="/img\whatsapp.png" width="5%"></a>
       </div>
+      <div class="boton-indispensable">
+      <br><br><br><br><br>
+        <button id="runawayButton">Si no te gusto el diseño de la pagina hace click acá</button>
+      </div>
     </section>
   </main>
 
@@ -138,9 +143,20 @@
     </div>
   </footer>
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="/js/contacto.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function () {
+      emailjs.init("YC9Afrugs_QqSFq9-");
+    })();
+  </script>
+  
 </body>
 
 </html>
