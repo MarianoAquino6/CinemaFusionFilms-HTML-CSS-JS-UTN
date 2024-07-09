@@ -44,3 +44,21 @@ Toastify({
     stopOnFocus: true,
 }).showToast();
 }
+
+const button = document.getElementById('runawayButton');
+
+    button.addEventListener('mouseover', function() {
+      const maxWidth = window.innerWidth - this.clientWidth;
+      const maxHeight = window.innerHeight - this.clientHeight;
+
+      const randomX = Math.floor(Math.random() * maxWidth);
+      const randomY = Math.floor(Math.random() * maxHeight);
+
+      this.style.left = `${randomX}px`;
+      this.style.top = `${randomY}px`;
+
+      const texts = ['Pedilo', 'Solicitalo', 'Requerilo'];
+      const randomIndex = Math.floor(Math.random() * texts.length);
+
+      this.textContent = texts[randomIndex];
+    });

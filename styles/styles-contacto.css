@@ -51,3 +51,20 @@ h3 {
 .blanco {
     color: white;
 }
+
+#runawayButton {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-volador {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
