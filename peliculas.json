@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cuando acecha la maldad",
+        "precio": 16.520,
+        "rutaPoster": "../img/posters/cuando-acecha.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Demons",
+        "precio": 7.500,
+        "rutaPoster": "../img/posters/demons.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Dracula",
+        "precio": 8.200,
+        "rutaPoster": "../img/posters/dracula.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Hereditary",
+        "precio": 9.950,
+        "rutaPoster": "../img/posters/hereditary.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Inferno",
+        "precio": 6.555,
+        "rutaPoster": "../img/posters/inferno.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Midsommar",
+        "precio": 9.100,
+        "rutaPoster": "../img/posters/midsommar.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Pearl",
+        "precio": 12.300,
+        "rutaPoster": "../img/posters/pearl.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Rosemary's baby",
+        "precio": 8.200,
+        "rutaPoster": "../img/posters/rosemary.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Smile",
+        "precio": 13.300,
+        "rutaPoster": "../img/posters/smile.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Suspiria",
+        "precio": 8.500,
+        "rutaPoster": "../img/posters/suspiria.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Terrifier 2",
+        "precio": 15.154,
+        "rutaPoster": "../img/posters/terrifier.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "The exorcist",
+        "precio": 7.500,
+        "rutaPoster": "../img/posters/exorcist.jpg"
+    }
+]
