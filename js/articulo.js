@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
     fetch('articulos.json')
       .then(response => response.json())
       .then(data => {
         const articulos = data.articles;
-        cargarArticulo(articulos[0]);
-        cargarCartas(articulos);
+        if (articulos.length > 0) {
+          const article = articulos[id];
+          cargarArticulo(article); 
+          cargarCartas(articulos);
+        }
       });
   });
   
