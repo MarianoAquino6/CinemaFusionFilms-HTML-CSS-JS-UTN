@@ -1,0 +1,51 @@
+{
+    "articles": [
+        {
+            "title": "CINEMAFUSION FILMS",
+            "image": "/img/acerca-de/presentacion.jpg",
+            "caption": "",
+            "content": [
+                "En CinemaFusion Films nos especializamos en la producción, distribución y venta de películas del género de horror que te helarán la sangre y te robarán el sueño. Desde nuestra fundación, nos hemos comprometido a ofrecer una experiencia cinematográfica única que desafíe los límites de lo convencional."
+            ]
+        },
+        {
+            "title": "Nuestro Compromiso",
+            "image": "/img/acerca-de/equipo.jpg",
+            "caption": "",
+            "content": [
+                "Nos dedicamos a proporcionar experiencias cinematográficas inmersivas que cautiven a nuestros espectadores y los transporten a través de emocionantes historias llenas de suspense y horror. Cada película en nuestro catálogo está meticulosamente seleccionada para ofrecer momentos de terror visceral y reflexión profunda."
+            ]
+        },
+        {
+            "title": "Explora Nuestro Oscuro Mundo",
+            "image": "/img/acerca-de/Explorar.jpg",
+            "caption": "",
+            "content": [
+                "Nuestro catálogo abarca desde clásicos icónicos hasta innovadoras obras contemporáneas que exploran lo más profundo de la psique humana. Cada película representa nuestro compromiso con la calidad cinematográfica y nuestra pasión por el arte del terror."
+            ]
+        },
+        {
+            "title": "Equipo Apasionado",
+            "image": "/img/acerca-de/equipoapacionado.jpg",
+            "caption": "",
+            "content": [
+                "Detrás de cada producción hay un equipo de talentosos cineastas y creativos que comparten una fascinación por el género de horror. Trabajamos incansablemente para crear experiencias que desafíen, entretengan y provoquen reflexión en nuestra audiencia global."
+            ]
+        },
+        {
+            "title": "Conecta con Nosotros",
+            "image": "/img/acerca-de/cinema.jpg",
+            "caption": "",
+            "content": [
+                "Únete a nuestra comunidad en nuestras redes sociales para descubrir las últimas novedades, interactuar con el equipo y explorar detrás de las escenas de nuestras producciones más recientes. En CinemaFusion Films, valoramos profundamente la conexión con nuestros seguidores y la pasión compartida por el terror."
+            ]
+        }
+    ],
+    "authors": [
+        { "name": "Mariano Aquino", "link": "https://www.linkedin.com/in/mariano-nicolas-aquino/" },
+        { "name": "Joaquín Abal", "link": "https://www.linkedin.com/in/joaquin-abal/" },
+        { "name": "Nicolás Brites", "link": "https://www.linkedin.com/in/nicolas-brites-vergara-83485b1b3/" },
+        { "name": "Matías Cantero", "link": "https://www.linkedin.com/in/i-matiascantero/" },
+        { "name": "Alexis Aranda", "link": "https://www.linkedin.com/in/alexis-aranda-jara/" }
+    ]
+}
