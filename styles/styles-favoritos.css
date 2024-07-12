@@ -1,0 +1,12 @@
+
+.custom-card {
+    background-image: url('../img/card-bg.jpg');
+    border: 1px solid #ffffff; 
+    border-radius: 0.25rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+  }
+  
+.custom-card .card-body {
+    padding: 1rem; 
+  }
