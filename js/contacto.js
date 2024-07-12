@@ -1,4 +1,3 @@
-
 function sendEmail() {
     const form = document.getElementById('contactForm');
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../styles/styles-base.css">
     <link rel="stylesheet" href="../styles/styles-peliculas.css">
 </head>
@@ -97,7 +98,7 @@
                     </div>
 
                     <button type="button" class="btn btn-danger w-100" id="btn-agregar-pearl"
-                        data-nombre="Pearl" data-precio="12300" data-poster="../img/posters/pearl.webp">
+                        data-nombre="Pearl" data-precio="12300" data-poster="../img/posters/pearl.webp" data-movie-id="949423">
                         Agregar al carrito
                     </button>
                 </div>
@@ -116,38 +117,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Mia Goth</td>
-                                <td>Pearl</td>
-                            </tr>
-                            <tr>
-                                <td>David Corenswet</td>
-                                <td>The Projectionist</td>
-                            </tr>
-                            <tr>
-                                <td>Tandi Wright</td>
-                                <td>Ruth</td>
-                            </tr>
-                            <tr>
-                                <td>Matthew Sunderland</td>
-                                <td>Pearl's Father</td>
-                            </tr>
-                            <tr>
-                                <td>Emma Jenkins-Purro</td>
-                                <td>Mitsy</td>
-                            </tr>
-                            <tr>
-                                <td>Alistair Sewell</td>
-                                <td>Howard</td>
-                            </tr>
-                            <tr>
-                                <td>Amelia Reid</td>
-                                <td>Leah</td>
-                            </tr>
-                            <tr>
-                                <td>Grace Aebersold</td>
-                                <td>Margaret</td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -155,15 +125,7 @@
                     <div class="sinopsis">
                         <h3>SINOPSIS</h3>
                         <p>
-                            Ambientada en 1918 durante la pandemia de gripe española, "Pearl" cuenta la historia de una
-                            joven llamada Pearl que sueña con escapar de su aburrida vida en la granja de su familia en
-                            Texas. Con su esposo ausente, peleando en la Primera Guerra Mundial, Pearl está atrapada
-                            bajo el estricto control de su madre y el cuidado de su padre enfermo. Mientras ansía una
-                            vida de glamour y fama, la presión de su situación actual y su creciente deseo por la
-                            libertad llevan a Pearl a tomar decisiones drásticas y violentas. En su búsqueda de cumplir
-                            sus sueños, Pearl se enfrenta a sus propios demonios y a los límites de su moralidad,
-                            revelando la oscura y perturbadora verdad de hasta dónde está dispuesta a llegar para
-                            alcanzar sus ambiciones.
+
                         </p>
                     </div>
                     <div class="puntuacionUsuario">
@@ -238,24 +200,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="/js/carrito.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btnAgregarCarrito = document.getElementById('btn-agregar-pearl');
-    
-            if (btnAgregarCarrito) {
-                btnAgregarCarrito.addEventListener('click', () => {
-                    // Obtener los datos de los atributos data-
-                    const nombre = btnAgregarCarrito.getAttribute('data-nombre');
-                    const precio = parseInt(btnAgregarCarrito.getAttribute('data-precio'));
-                    const poster = btnAgregarCarrito.getAttribute('data-poster');
-    
-                    // Llamar a la función en carrito.js para guardar en localStorage
-                    agregarAlCarrito(nombre, precio, poster);
-                });
-            }
-        });
-    </script>
+    <script src="/js/pelicula.js"></script>
 </body>
 
 </html>

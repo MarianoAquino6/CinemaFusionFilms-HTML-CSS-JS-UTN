@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">    
     <link rel="stylesheet" href="../styles/styles-base.css">
     <link rel="stylesheet" href="../styles/styles-peliculas.css">
 </head>
@@ -96,7 +97,7 @@
                     </div>
 
                     <button type="button" class="btn btn-danger w-100" id="btn-agregar-carrito-terrifier"
-                        data-nombre="Terrifier 2" data-precio="15154" data-poster="../img/posters/terrifier.jpg">
+                        data-nombre="Terrifier 2" data-precio="15154" data-poster="../img/posters/terrifier.jpg" data-movie-id="663712">
                         Agregar al carrito
                     </button>
                 </div>
@@ -107,7 +108,6 @@
             <div class="sinopsis-reparto">
                 <div class="reparto">
                     <h3>REPARTO</h3>
-
                     <table>
                         <thead>
                             <tr>
@@ -116,54 +116,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>David Howard Thornton</td>
-                                <td>Art the Clown</td>
-                            </tr>
-                            <tr>
-                                <td>Lauren LaVera</td>
-                                <td>Sienna</td>
-                            </tr>
-                            <tr>
-                                <td>Elliott Fullam</td>
-                                <td>Jonathan</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Voigt</td>
-                                <td>Barbara</td>
-                            </tr>
-                            <tr>
-                                <td>Kailey Hyman</td>
-                                <td>Brooke</td>
-                            </tr>
-                            <tr>
-                                <td>Casey Hartnett</td>
-                                <td>Allie</td>
-                            </tr>
-                            <tr>
-                                <td>Charlene Amoia</td>
-                                <td>Monica Brown</td>
-                            </tr>
-                            <tr>
-                                <td>Felissa Rose</td>
-                                <td>Ms. Principe</td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
+
                 <div class="sinopsis-puntuacionUsuario">
                     <div class="sinopsis">
                         <h3>SINOPSIS</h3>
                         <p>
-                            Después de ser resucitado por una entidad siniestra, Art the Clown regresa al condado de
-                            Miles, donde tiene como objetivo una adolescente llamada Sienna y su hermano menor Jonathan
-                            durante la noche de Halloween. Sienna está lidiando con la reciente muerte de su padre y los
-                            traumas familiares, mientras se prepara para una fiesta de Halloween con un traje elaborado
-                            por ella misma. Sin embargo, la noche toma un giro aterrador cuando Art comienza una ola de
-                            asesinatos brutal y sádica. Sienna y Jonathan deben enfrentarse a sus peores pesadillas y
-                            descubrir los oscuros secretos que rodean a Art the Clown, mientras luchan por sobrevivir a
-                            su despiadada cacería.
+
                         </p>
+
                     </div>
                     <div class="puntuacionUsuario">
                         <h3>Deja tu puntuacion!</h3>
@@ -237,24 +201,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
     <script src="/js/carrito.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btnAgregarCarrito = document.getElementById('btn-agregar-carrito-terrifier');
-    
-            if (btnAgregarCarrito) {
-                btnAgregarCarrito.addEventListener('click', () => {
-                    // Obtener los datos de los atributos data-
-                    const nombre = btnAgregarCarrito.getAttribute('data-nombre');
-                    const precio = parseInt(btnAgregarCarrito.getAttribute('data-precio'));
-                    const poster = btnAgregarCarrito.getAttribute('data-poster');
-    
-                    // Llamar a la función en carrito.js para guardar en localStorage
-                    agregarAlCarrito(nombre, precio, poster);
-                });
-            }
-        });
-    </script>
+    <script src="/js/pelicula.js"></script>
 </body>
 
 </html>

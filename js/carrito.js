@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Recuperar las películas del carrito desde localStorage si existen
   let peliculasEnCarrito = JSON.parse(localStorage.getItem('peliculasEnCarrito')) || [];
 
   if (peliculasEnCarrito.length > 0) {
@@ -31,24 +30,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Función para agregar una película al carrito
 function agregarAlCarrito(nombre, precio, poster) {
-  // Obtener las películas actuales del carrito desde localStorage
   let peliculasEnCarrito = JSON.parse(localStorage.getItem('peliculasEnCarrito')) || [];
 
-  // Construir el objeto de la película a agregar
   const pelicula = {
     nombre: nombre,
     precio: precio,
     rutaPoster: poster
   };
 
-  // Agregar la nueva película al array de películas en el carrito
   peliculasEnCarrito.push(pelicula);
 
-  // Guardar el array actualizado de películas de vuelta en localStorage
   localStorage.setItem('peliculasEnCarrito', JSON.stringify(peliculasEnCarrito));
 
-  // Opcionalmente, redirigir a la página del carrito o actualizar la UI
-  alert('Película agregada al carrito.');
+  showToast('Película agregada al carrito', false);
 }
+
+function showToast(message, isError = false) {
+  Toastify({
+      text: message,
+      backgroundColor: isError ? 'linear-gradient(to right, #801a04, #d42904)' : 'linear-gradient(to right, #115702, #247a11)',
+      duration: 3000,
+      close: true
+  }).showToast();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  function agregarListenerAgregarAlCarrito(idBoton) {
+      const btnAgregarCarrito = document.getElementById(idBoton);
+
+      if (btnAgregarCarrito) {
+          btnAgregarCarrito.addEventListener('click', () => {
+              const nombre = btnAgregarCarrito.getAttribute('data-nombre');
+              const precio = parseInt(btnAgregarCarrito.getAttribute('data-precio'));
+              const poster = btnAgregarCarrito.getAttribute('data-poster');
+
+              agregarAlCarrito(nombre, precio, poster);
+          });
+      }
+  }
+
+  const botonesAgregarCarrito = [
+      'btn-agregar-carrito-acecha',
+      'btn-agregar-demons',
+      'btn-agregar-dracula',
+      'btn-agregar-hereditary',
+      'btn-agregar-inferno',
+      'btn-agregar-midsommar',
+      'btn-agregar-pearl',
+      'btn-agregar-rose',
+      'btn-agregar-smile',
+      'btn-agregar-suspiria',
+      'btn-agregar-carrito-terrifier',
+      'btn-agregar-exorcist'
+  ];
+
+  botonesAgregarCarrito.forEach(id => {
+      agregarListenerAgregarAlCarrito(id);
+  });
+});

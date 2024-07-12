@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../styles/styles-base.css">
     <link rel="stylesheet" href="../styles/styles-peliculas.css">
 </head>
@@ -97,7 +98,7 @@
                     </div>
 
                     <button type="button" class="btn btn-danger w-100" id="btn-agregar-hereditary"
-                        data-nombre="Hereditary" data-precio="9950" data-poster="../img/posters/hereditary.jpg">
+                        data-nombre="Hereditary" data-precio="9950" data-poster="../img/posters/hereditary.jpg" data-movie-id="493922">
                         Agregar al carrito
                     </button>
                 </div>
@@ -116,38 +117,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Toni Collette</td>
-                                <td>Annie Graham</td>
-                            </tr>
-                            <tr>
-                                <td>Gabriel Byrne</td>
-                                <td>Steve Graham</td>
-                            </tr>
-                            <tr>
-                                <td>Alex Wolff</td>
-                                <td>Peter Graham</td>
-                            </tr>
-                            <tr>
-                                <td>Milly Shapiro</td>
-                                <td>Charlie Graham</td>
-                            </tr>
-                            <tr>
-                                <td>Ann Dowd</td>
-                                <td>Joan</td>
-                            </tr>
-                            <tr>
-                                <td>Mallory Bechtel</td>
-                                <td>Bridget</td>
-                            </tr>
-                            <tr>
-                                <td>Brock McKinney</td>
-                                <td>Aaron</td>
-                            </tr>
-                            <tr>
-                                <td>Jake Brown</td>
-                                <td>Brandon</td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -155,15 +125,7 @@
                     <div class="sinopsis">
                         <h3>SINOPSIS</h3>
                         <p>
-                            Tras la muerte de su madre, Annie Graham y su familia comienzan a desentrañar secretos
-                            oscuros y aterradores sobre su linaje. Mientras Annie trata de sobrellevar su dolor y sus
-                            complejas emociones, su hija Charlie y su hijo Peter empiezan a experimentar fenómenos
-                            extraños e inquietantes. A medida que los eventos sobrenaturales se intensifican, la familia
-                            se ve arrastrada a una espiral de terror y locura. Annie descubre conexiones perturbadoras
-                            entre su madre y un culto misterioso, revelando una trama siniestra que amenaza con
-                            destruirlos a todos. La familia Graham debe enfrentarse a sus peores pesadillas y
-                            desentrañar el verdadero legado que han heredado, mientras luchan por sobrevivir a las
-                            fuerzas malignas que los acechan.
+
                         </p>
                     </div>
                     <div class="puntuacionUsuario">
@@ -238,24 +200,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="/js/carrito.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btnAgregarCarrito = document.getElementById('btn-agregar-hereditary');
-    
-            if (btnAgregarCarrito) {
-                btnAgregarCarrito.addEventListener('click', () => {
-                    // Obtener los datos de los atributos data-
-                    const nombre = btnAgregarCarrito.getAttribute('data-nombre');
-                    const precio = parseInt(btnAgregarCarrito.getAttribute('data-precio'));
-                    const poster = btnAgregarCarrito.getAttribute('data-poster');
-    
-                    // Llamar a la función en carrito.js para guardar en localStorage
-                    agregarAlCarrito(nombre, precio, poster);
-                });
-            }
-        });
-    </script>
+    <script src="/js/pelicula.js"></script>
 </body>
 
 </html>

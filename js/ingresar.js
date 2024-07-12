@@ -7,20 +7,17 @@ function validarLogin() {
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
 
-    // Recuperar usuario desde localStorage
     let storedUser = JSON.parse(localStorage.getItem('user'));
 
-    // Verificar si las credenciales son correctas
     if (storedUser && storedUser.username === username && storedUser.password === password) {
         mostrarMensajeBienvenida(username);
         setTimeout(function() {
-            window.location.href = 'index.html'; // Redireccionar a la página de inicio
-        }, 2000); // 2 segundos
+            window.location.href = 'index.html';
+        }, 2000);
     } else {
         showToast('Credenciales incorrectas. Por favor, intenta nuevamente.', true);
     }
 
-    // Limpiar campos de formulario
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 
@@ -47,11 +44,8 @@ function mostrarFormularioRecuperar() {
   function enviarSolicitud() {
     let email = document.getElementById('email-recuperar').value;
 
-    // Aquí podrías enviar una solicitud al servidor para procesar la recuperación de contraseña
-    // Por ahora, simplemente mostramos un mensaje
     mostrarMensajeRecuperacion(email);
 
-    // Limpiar el campo de correo electrónico
     document.getElementById('email-recuperar').value = '';
 
     return false;

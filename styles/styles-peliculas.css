@@ -94,6 +94,19 @@
     font-family: 'ubuntu';
 }
 
+.puntuacionUsuario .estrellas .fas {
+    color: gray;
+    cursor: pointer;
+}
+
+.puntuacionUsuario .estrellas .fas.hover {
+    color: red;
+}
+
+.puntuacionUsuario .estrellas .fas.selected {
+    color: red;
+}
+
 /* 2. CONTAINER SECUNDARIO CON INFORMACION PELICULAS */
 
 .sinopsis-reparto {
