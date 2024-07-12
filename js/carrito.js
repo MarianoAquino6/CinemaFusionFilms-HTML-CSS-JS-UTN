@@ -5,15 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('producto-lista');
     let subtotal = 0;
 
-    peliculasEnCarrito.forEach(pelicula => {
+    peliculasEnCarrito.forEach((pelicula, index) => {
       const peliculaHTML = `
-        <div class="row">
-          <img src="${pelicula.rutaPoster}" class="img-fluid col-md-4 mt-1" alt="${pelicula.nombre}">
+        <div class="row" data-index="${index}">
+        <div class="col-md-4">
+          <img src="${pelicula.rutaPoster}" class="img-fluid rounded mt-1 ml-3 custom-img" alt="${pelicula.nombre}">
+          </div>
           <div class="card-body col-md-8">
             <h5>Nombre: ${pelicula.nombre}</h5>
             <h5>Precio: $${(pelicula.precio)}</h5>
             <div class="cards-button">
-              <button class="btn btn-danger btn-rojo">Eliminar</button>
+              <button class="btn btn-danger btn-rojo" data-index="${index}">Eliminar</button>
               <button class="btn btn-primary">Agregar a Favoritos</button>
             </div>
           </div>
@@ -27,6 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = subtotal * 1.20; // Aplicar impuesto del 20%
     document.getElementById('subtotal').innerText = `Subtotal: $${(subtotal).toFixed(2)}`;
     document.getElementById('total').innerText = `Total: $${(total).toFixed(2)}`;
+
+    document.querySelectorAll('.btn-rojo').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const index = event.target.getAttribute('data-index');
+        eliminarDelCarrito(index);
+      });
+    });
   }
 });
 
@@ -39,11 +48,25 @@ function agregarAlCarrito(nombre, precio, poster) {
     rutaPoster: poster
   };
 
+  // Verificar si la película ya está en el carrito
+  const peliculaExistente = peliculasEnCarrito.some(p => p.nombre === nombre);
+  if (peliculaExistente) {
+    showToast('Esta película ya está en el carrito', true);
+    return;
+  }
+
   peliculasEnCarrito.push(pelicula);
 
   localStorage.setItem('peliculasEnCarrito', JSON.stringify(peliculasEnCarrito));
 
   showToast('Película agregada al carrito', false);
+}
+
+function eliminarDelCarrito(index) {
+  let peliculasEnCarrito = JSON.parse(localStorage.getItem('peliculasEnCarrito')) || [];
+  peliculasEnCarrito.splice(index, 1);
+  localStorage.setItem('peliculasEnCarrito', JSON.stringify(peliculasEnCarrito));
+  location.reload();
 }
 
 function showToast(message, isError = false) {
