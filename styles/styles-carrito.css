@@ -46,3 +46,14 @@ hr {
 .cards-button .btn {
   margin-right: 10px;
 }
+
+.custom-img {
+  margin-left: 1.5rem; /* Ajusta según sea necesario */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .custom-img {
+    width: 50%;
+  }
+}
