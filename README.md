@@ -2,6 +2,12 @@
 
 This project was developed as part of the **Laboratory 3** course at **Universidad Tecnológica Nacional (UTN)**. It is a web-based project created using **HTML**, **CSS**, and **JavaScript**, focusing on both functionality and user experience.
 
+## Live Demo
+
+The project has been deployed and can be accessed at the following link:
+
+[Cinema Fusion - Live Demo](https://cinemafusion.netlify.app/)
+
 ## Overview
 
 The project was a group effort designed to showcase skills in front-end development and explore best practices in **UX/UI design**. The repository includes both the implemented web project and additional documentation about the development process and theoretical concepts.
